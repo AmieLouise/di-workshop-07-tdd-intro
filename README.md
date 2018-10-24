@@ -51,7 +51,7 @@ Look in [`array.test.js`](test/array.test.js). This contains some tests for Java
 
 **What do the existing tests actually test (explain in english)?**
   The first it statement checks if the fuction adds a new item to an array but calling the function to add the value 5 to the array. It then checks if the returned array contains the new value.
-  The second it statement checks if the same function changes it's length when a new value is added. It does this by setting an array with 4 values, using the function to add another and then checking that after this the length has increased to 5 as expected. 
+  The second it statement checks if the same function changes it's length when a new value is added. It does this by setting an array with 4 values, using the function to add another and then checking that after this the length has increased to 5 as expected.
 
 
 **Add a test for the `pop()` method.**
@@ -70,20 +70,24 @@ Until now, we've been testing JavaScript's in-built functionality, which is kind
 Read The coolculator class and tests.
 
 **What methods does the Cooclulator currently implement?**
+It currently only implements the add fuction which shold take two values as arguments and return the value of these added together.
 
 **Describe how the existing test works**
+The existing test first creates a new coolculator object before testing the add() function. It does this by first specifying a variable which will hold the outcome of the add function when it's run using the arguments 2 and 3. Then it compares the final value of the result variable against the expected value which is 5.
 
 **Change a value in the `add()` test so it fails.**
-Once you've seen it fail, revert your change so it's green again.
 
-**Changethe implementation of `add()` so it always returns `1000`.**
+
+**Change the implementation of `add()` so it always returns `1000`.**
 Once you've seen it fail, revert your change so it's green again.
 
 Now let's do some TDD! Uncomment the `multiply()` test.
 
 **What do you expect to happen when you run your tests?**
+There will be an error as the multiply function hasn't been declared yet.
 
 **What actually happened when you ran your tests?**
+It specifies that multiply is not a function
 
 **Add a method to the Coolculator so the test passes green**
 
