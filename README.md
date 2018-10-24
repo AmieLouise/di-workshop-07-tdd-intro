@@ -50,9 +50,16 @@ Once you understand what's going on, **ANSWER THE QUESTION IN THIS README FILE**
 Look in [`array.test.js`](test/array.test.js). This contains some tests for JavaScript's built-in Array methods.
 
 **What do the existing tests actually test (explain in english)?**
+  The first it statement checks if the fuction adds a new item to an array but calling the function to add the value 5 to the array. It then checks if the returned array contains the new value.
+  The second it statement checks if the same function changes it's length when a new value is added. It does this by setting an array with 4 values, using the function to add another and then checking that after this the length has increased to 5 as expected. 
+
 
 **Add a test for the `pop()` method.**
-Hint: You'll need _two_ assertions to fully test that it `pop()` works. Explain why you chose these assersions here.
+Hint: You'll need _two_ assertions to fully test that it `pop()` works. Explain why you chose these assertions here.
+
+The first test works in the same way as the first push() test in the fact you first set up a string, call the function and I've chosen the assertion that the array will equal [1, 2, 3] because the function should remove the last array entry which was 4
+
+I've set up the second test to create an array with a length of 4. Using what I know in the first text I have chosen the assertion that the resulting array length will be 3 as one of the value will have been removed.
 
 > 💡 **REMINDER**: Do you need to commit your answers to the questions above?
 
